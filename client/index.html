@@ -8,10 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -20,6 +27,7 @@
             fontFamily: {
               Montserrat: ["Montserrat", "sans-serif"],
               SourceSans: ["Source+Sans+3", "sans-serif"],
+              Montaga: ["Montaga", "sans-serif"],
             },
           },
         },
@@ -27,7 +35,7 @@
     </script>
   </head>
   <body>
-    <nav class="h-[150px] px-[126px] flex justify-between items-center z-50 fixed top-0 left-0 w-full">
+    <nav class="h-[150px] px-[126px] flex justify-between items-center z-50 absolute top-0 left-0 w-full">
       <div class="flex gap-7">
         <img class="w-[100px]" src="../assets/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
         <div class="inline-block flex flex-col justify-end">
@@ -49,13 +57,16 @@
       <div><img src="../assets/carousel_1.jpeg" alt="" class="w-full brightness-50" /></div>
     </header>
     <main>
-      <section class="p-[98px] flex justify-between gap-8">
-        <img src="../assets/foto_kepsek.png" alt="" class="basis-1/3 flex-grow">
-        <div class="basis-2/3 flex flex-col justify-center">
-            <h1 class="text-black text-[50px] font-extrabold font-Montserrat">JUDUL SAMBUTAN</h1>
-            <h2 class="text-justify text-black text-[27px] font-semibold font-SourceSans">Drs. Suyanto S.pd., M.pd.</h2>
-            <p class="max-w-2xl break-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null.... </p>
-            <a href="">Lihat Selengkapnya</a>
+      <section class="p-[98px] flex justify-between gap-8 w-full">
+        <img src="../assets/foto_kepsek.png" alt="" class="basis-1/3 flex-initial" />
+        <div class="basis-2/3 flex flex-col justify-center flex-initial">
+          <h1 class="text-black text-[50px] font-extrabold font-Montserrat">JUDUL SAMBUTAN</h1>
+          <h2 class="text-justify text-black text-[27px] font-semibold font-SourceSans">Drs. Suyanto S.pd., M.pd.</h2>
+          <p class="max-w-2xl break-all">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null....
+          </p>
+          <a href="">Lihat Selengkapnya</a>
         </div>
       </section>
       <section class="news-section">
@@ -66,9 +77,82 @@
         <div><img src="../assets/carousel_1.jpeg" alt="" class="w-20" /></div>
         <div><img src="../assets/carousel_1.jpeg" alt="" class="w-20" /></div>
         <div><img src="../assets/carousel_1.jpeg" alt="" class="w-20" /></div>
-    </section>
+      </section>
+      <section class="flex">
+        <div class="basis-1/2 text-center px-[75px] flex flex-col justify-center gap-9">
+          <h2 class="text-black text-6xl font-extrabold font-Montserrat uppercase tracking-widest">SEJARAH</h2>
+          <p class="text-justify text-black text-xl font-normal font-SourceSans tracking-widest">
+            Jadi dulu sekolah ini dulu bekas rumah sakit dan bla bla blaa... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="basis-1/2">
+          <img class="w-full" src="../assets/school_ground.png" alt="" />
+        </div>
+      </section>
+      <section class="flex justify-center gap-14 pt-32 pb-56">
+        <div class="rounded-2xl bg-[#C8AE7D] pt-16 pb-28 px-6 max-w-xl">
+          <h2 class="text-black text-6xl font-extrabold font-Montserrat tracking-widest indent-4 mb-3">VISI</h2>
+          <ul class="flex flex-col gap-5 mb-8">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            </li>
+          </ul>
+          <a href="" class="bg-[#655740] text-white rounded px-4 py-2 ml-4">Lihat Selengkapnya</a>
+        </div>
+        <div class="rounded-2xl bg-[#C8AE7D] pt-16 pb-28 px-10 max-w-xl">
+          <h2 class="text-black text-6xl font-extrabold font-Montserrat mb-3">MISI</h2>
+          <p class="mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in....
+          </p>
+          <a href="" class="bg-[#655740] text-white rounded px-4 py-2">Lihat Selengkapnya</a>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#655740] flex items-center py-10 px-[126px] justify-between">
+      <div class="flex items-center gap-14">
+        <div class="flex gap-7 border border-r-2 border-y-0 border-l-0 border-r-white">
+          <img class="w-[100px]" src="../assets/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
+          <div class="inline-block flex flex-col justify-end">
+            <h1 class="w-56 text-white text-lg font-extrabold font-['Montserrat'] uppercase leading-[23px] tracking-widest">SMKN 1 PEKALONGAN</h1>
+            <p class="w-[185px] h-[38px] opacity-50 text-white text-xs font-semibold font-['Source Sans 3'] capitalize tracking-[5px]">SMK Bisa - Hebat</p>
+          </div>
+        </div>
+        <div class="text-white font-Montaga flex flex-col gap-2">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-map inline-block align-middle"></i>
+            <p class="inline-block w-72 leading-4 tracking-wide">Jl. Bengkok No.29, Sidodadi, Kec. Pekalongan, Kabupaten Lampung Timur, Lampung 34381</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-phone"></i>
+            <p class="inline-block">0721-8888-9999</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-white flex gap-7">
+        <a href="">
+          <i class="fa-brands fa-square-facebook fa-2xl"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
